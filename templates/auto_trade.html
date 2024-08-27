@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-Trading Portfolio - Stock Trading App</title>
+</head>
+<body>
+    <h1>Auto-Trading Portfolio</h1>
+    <form method="POST">
+        <div>
+            <label for="stock_symbol">Stock Symbol:</label>
+            <input type="text" name="stock_symbol" required>
+        </div>
+        <div>
+            <label for="stop_loss_fraction">Stop Loss Fraction (e.g., 0.7 for 70%):</label>
+            <input type="text" name="stop_loss_fraction" required>
+        </div>
+        <div>
+            <input type="submit" value="Start Auto-Trading">
+        </div>
+    </form>
+    <p><a href="{{ url_for('portfolio') }}">Back to Portfolio</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Stock Trading App</title>
+</head>
+<body>
+    <h1>Welcome back, {{ current_user.username }}!</h1>
+    <nav>
+        <a href="{{ url_for('portfolio') }}">Portfolio</a> |
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Stock Trading App</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="name">First Name:</label>
+            {{ form.name }}
+        </div>
+        <div>
+            <label for="surname">Last Name:</label>
+            {{ form.surname }}
+        </div>
+        <div>
+            <label for="date_of_birth">Date of Birth:</label>
+            {{ form.date_of_birth }}
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            {{ form.email }}
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            {{ form.username }}
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            {{ form.password }}
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            {{ form.confirm_password }}
+        </div>
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+</body>
+</html>
